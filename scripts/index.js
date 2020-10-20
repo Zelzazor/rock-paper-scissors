@@ -6,6 +6,8 @@ const victory = "went victorius! Well deserved!";
 const tie = "were tied! Everybody home!";
 const defeat = "were defeated! How pity!"
 
+
+//Determines value of result
 function playRound(playerSelection, computerSelection) {
     result.textContent = "You ";
     switch (playerSelection) {
@@ -46,6 +48,8 @@ function playRound(playerSelection, computerSelection) {
     result.textContent += ` The computer selected ${computerSelection}!`
 }
 
+
+//Determines the selection of the computer, at random
 function computerPlay() {
     const random = Math.floor(Math.random() * 3);
     switch (random) {
@@ -56,7 +60,7 @@ function computerPlay() {
 }
 
 
-
+//Event for the button, looks for the value of the selected item in combobox and pass as argument on playRound()
 btnCalc.addEventListener('click', () => {
     const selected = document.querySelector("#rockPaperScissors").selectedIndex;
     playRound(options[selected].value, computerPlay());
