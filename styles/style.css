@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.2rem rgb(193, 255, 101);
+    border-radius: 1rem;
+}
+
+.row{
+    margin: 0.3rem;
+}
+
+#rockPaperScissors{
+    padding: 0.5rem 4rem 0.5rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+#btnCalc{
+    cursor: pointer;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    background-color: #DDDDDD;
+    border: none;
+    border-radius: 0.3rem;
+    transition-duration: 100ms;
+}
+
+#btnCalc:hover{
+    background-color:#EEEFFF;
+    box-shadow: 0rem 0rem 0.3rem #DDDDDD;
+}
+
+#result{
+    font-size: 1.3rem;
+}
